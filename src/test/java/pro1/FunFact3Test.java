@@ -11,6 +11,7 @@ public class FunFact3Test
     {
         var data = TestDataUtils.getTestData();
         var result = FunFact3.getFunFact(data);
+        System.out.println(result);
         assertEquals(
                 5_625_930,
                 result

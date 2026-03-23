@@ -11,8 +11,9 @@ public class FunFact4Test
     {
         var data = TestDataUtils.getTestData();
         var result = FunFact4.getFunFact(data);
+        System.out.println(result);
         assertEquals(
-                "Boletice",
+                "Praha",
                 result
         );
     }

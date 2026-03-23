@@ -11,6 +11,7 @@ public class FunFact1Test
     {
         var data = TestDataUtils.getTestData();
         var result = FunFact1.getFunFact(data);
+        System.out.println(result);
         assertEquals(
                 132,
                 result

@@ -11,6 +11,7 @@ public class FunFact2Test
     {
         var data = TestDataUtils.getTestData();
         var result = FunFact2.getFunFact(data);
+        System.out.println(result);
         assertEquals(
                 10_909_500,
                 result
