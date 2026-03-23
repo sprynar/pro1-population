@@ -10,7 +10,7 @@ public class FunFact10Test
     void test01()
     {
         var data = TestDataUtils.getTestData();
-        var result = FunFact7.getFunFact(data);
+        var result = FunFact10.getFunFact(data);
         assertEquals(
                 "Praha-východ",
                 result

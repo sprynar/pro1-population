@@ -9,6 +9,11 @@ public class FunFact2 {
      * @return TODO: Celkový počet obyvatel ve všech obcích
      */
     public static int getFunFact(List<Muni> data) {
-        return 0;
+        int pocetObyvatel = data.stream().mapToInt(Muni::getPopulation).sum();
+//        int pocetObyvatel = 0;
+//        for (Muni muni : data) {
+//            pocetObyvatel += muni.getPopulation();
+//        }
+        return pocetObyvatel;
     }
 }
