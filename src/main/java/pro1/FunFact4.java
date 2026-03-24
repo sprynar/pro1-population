@@ -10,7 +10,14 @@ public class FunFact4 {
      * @return TODO: Název obce, ve které je nejméně vyvážený počet mužů a žen
      */
     public static String getFunFact(List<Muni> data) {
-        String result = data.stream().filter(m-> m.getPopulation() > 0).max(Comparator.comparing(m -> (Math.abs(m.getMenPopulation() - m.getWomenPopulation())/m.getPopulation()))).get().getName();
+        String result = data.stream()
+                .filter(m-> m.getPopulation() > 0)
+                .max(Comparator.comparing(
+                        m -> (
+                                Math.abs(m.getMenPopulation() - m.getWomenPopulation())/
+                                        m.getPopulation())))
+                .get()
+                .getName();
         return result;
     }
 }
